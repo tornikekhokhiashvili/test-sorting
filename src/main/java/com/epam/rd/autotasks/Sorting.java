@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class Sorting {
     public void sort(int[] array){
         if(array==null){
-            throw new IllegalArgumentException();
+//            throw new IllegalArgumentException();
+            throw new UnsupportedOperationException();
         }
 //        int n=array.length;
 //        for (int i=0;i<n-1;i++){
@@ -18,6 +19,6 @@ public class Sorting {
 //            }
 //        }
         Arrays.sort(array);
-//        throw new UnsupportedOperationException();
+
     }
 }
