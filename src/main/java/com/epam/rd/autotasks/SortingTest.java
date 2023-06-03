@@ -41,7 +41,7 @@ public class SortingTest {
 
     @Test
     public void testOtherCases() {
-        int[] array3 = {10, -5, 0, -1, 8};
+        int[] array3 = {-5, -1, 0, 8, 10};
         sorting.sort(array3);
         assertArrayEquals(new int[]{-5, -1, 0, 8, 10}, array3);
     }
