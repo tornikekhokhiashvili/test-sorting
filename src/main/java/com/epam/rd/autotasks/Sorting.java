@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Sorting {
     public void sort(int[] array){
         if(array==null){
-//            throw new IllegalArgumentException();
+//            throw new IllegalArgumentException("arrays is empty");
             throw new UnsupportedOperationException();
         }
 //        int n=array.length;

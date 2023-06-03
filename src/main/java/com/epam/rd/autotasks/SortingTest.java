@@ -13,7 +13,8 @@ public class SortingTest {
 
     @Test
     public void testNullCase(){
-        int[] array=null;
+        int[] array = new int[0];
+        sorting.sort(array);
     }
 
     @Test
