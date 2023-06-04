@@ -8,4 +8,5 @@ public class TrickySortingImpl extends Sorting{
         super.sort(array);
         array[0] = new Random().nextInt();
     }
+
 }

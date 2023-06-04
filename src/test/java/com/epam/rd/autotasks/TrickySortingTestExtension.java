@@ -5,3 +5,5 @@ public class TrickySortingTestExtension extends SortingTest{
         sorting = new TrickySortingImpl();
     }
 }
+
+

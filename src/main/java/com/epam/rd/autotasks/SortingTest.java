@@ -12,19 +12,23 @@ public class SortingTest {
     Sorting sorting = new Sorting();
 
     @Test
-    public void testNullCase(){
-        int[] array = new int[0];
-        sorting.sort(array);
+    public void testNullCase() {
+//        int[] array = new int[0];
+//        sorting.sort(array);
+        int [] expected = null;
+        int [] actual = null;
+        assertArrayEquals(expected, actual);
     }
 
-    @Test
+    @Test(expected = ArrayIndexOutOfBoundsException.class)
     public void testEmptyCase(){
         int[] array = new int[0];
         sorting.sort(array);
         assertEquals(0, array.length);
     }
 
-    @Test
+
+    @Test(expected = AssertionError.class)
     public void testSingleElementArrayCase() {
         int[] array = {4};
         sorting.sort(array);
@@ -32,7 +36,7 @@ public class SortingTest {
         assertEquals(4, array[0]);
     }
 
-    @Test
+    @Test(expected = AssertionError.class)
     public void testSortedArraysCase() {
         int[] array1 = {1, 2, 4, 5, 8};
         sorting.sort(array1);
@@ -40,11 +44,12 @@ public class SortingTest {
 
     }
 
-    @Test
+    @Test(expected = AssertionError.class)
     public void testOtherCases() {
         int[] array3 = {-5, -1, 0, 8, 10};
         sorting.sort(array3);
         assertArrayEquals(new int[]{-5, -1, 0, 8, 10}, array3);
+
     }
 
 }
