@@ -4,10 +4,9 @@ import java.util.Arrays;
 
 public class Sorting {
     public void sort(int[] array){
-        if(array==null){
-//            throw new IllegalArgumentException("arrays is empty");
-            throw new UnsupportedOperationException();
-        }
+        if(array == null)
+            throw new IllegalArgumentException("Given array is null");
+
 //        int n=array.length;
 //        for (int i=0;i<n-1;i++){
 //            for (int j=0;j<n-i-1;j++){
